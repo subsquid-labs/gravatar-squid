@@ -22,7 +22,7 @@ make process
 #    transforming and storing it in the target database.
 #
 #    To start the graphql server open the separate terminal
-#    and run. The GraphQL playground will be available at localhost:4350graphl
+#    and run. The GraphQL playground will be available at localhost:4350/graphql
 make serve
 ```
 
