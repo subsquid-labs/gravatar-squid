@@ -6,14 +6,14 @@ import { Gravatar } from "./model/generated/gravatar.model";
 
 const processor = new EvmBatchProcessor()
   .setDataSource({
-    // uncomment and set RPC_ENDPOONT to enable contract state queries. 
+    // uncomment and set RPC_ENDPOINT to enable contract state queries. 
     // Both https and wss endpoints are supported. 
     // chain: process.env.RPC_ENDPOINT,
 
     // Change the Archive endpoints for run the squid 
-    // against the other  EVM networks:
-    // Polygon: https://polygon.archive.subsquid.io
-    // Goerli: https://goerli.archive.subsquid.io
+    // against the other EVM networks
+    // For a full list of supported networks and config options
+    // see https://docs.subsquid.io/develop-a-squid/evm-processor/configuration/
 
     archive: 'https://eth.archive.subsquid.io',
   })
