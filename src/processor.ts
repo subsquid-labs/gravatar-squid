@@ -1,5 +1,5 @@
 import { TypeormDatabase } from "@subsquid/typeorm-store";
-import {decodeHex, EvmBatchProcessor} from '@subsquid/evm-processor'
+import { decodeHex, EvmBatchProcessor} from '@subsquid/evm-processor'
 import { events } from "./abi/Gravity";
 import { ethers } from "ethers";
 import { Gravatar } from "./model/generated/gravatar.model";
