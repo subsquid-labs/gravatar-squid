@@ -22,7 +22,7 @@ processor.run(new TypeormDatabase({supportHotBlocks: false}), async (ctx) => {
       }))
     }
   }
-  await ctx.store.save([...gravatars.values()])
+  await ctx.store.upsert([...gravatars.values()])
 })
 
 
