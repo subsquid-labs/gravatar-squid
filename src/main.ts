@@ -4,7 +4,7 @@ import { ethers } from 'ethers'
 import { Gravatar } from './model'
 import { processor, GRAVATAR_CONTRACT } from './processor'
 
-processor.run(new TypeormDatabase({supportHotBlocks: false}), async (ctx) => {
+processor.run(new TypeormDatabase({supportHotBlocks: true}), async (ctx) => {
   const gravatars: Map<string, Gravatar> = new Map()
   for (const c of ctx.blocks) {
     for (const e of c.logs) {
