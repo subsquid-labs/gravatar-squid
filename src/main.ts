@@ -1,5 +1,4 @@
 import { TypeormDatabase } from '@subsquid/typeorm-store'
-import { decodeHex } from '@subsquid/evm-processor'
 import { events } from './abi/Gravity'
 import { ethers } from 'ethers'
 import { Gravatar } from './model'
@@ -16,7 +15,7 @@ processor.run(new TypeormDatabase({supportHotBlocks: false}), async (ctx) => {
       let idString = '0x' + id.toString(16)
       gravatars.set(idString, new Gravatar({
         id: idString,
-        owner: decodeHex(owner),
+        owner: owner,
         displayName,
         imageUrl
       }))
