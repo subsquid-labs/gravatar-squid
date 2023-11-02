@@ -1,5 +1,5 @@
 manifestVersion: subsquid.io/v0.1
-name: gravatar-squid-1
+name: gravatar-squid
 version: 1
 description: 'Indexes the Gravatar contract'
 build: 
