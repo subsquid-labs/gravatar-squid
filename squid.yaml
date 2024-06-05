@@ -5,10 +5,10 @@ description: 'Indexes the Gravatar contract'
 build: 
 deploy:
   addons:
-    postgres: 
+    postgres:
+    rpc:
+      - eth.http # RPC proxy URL will be supplied via the RPC_ETH_HTTP env variable
   processor:
     cmd: [ "sqd", "process:prod" ]
-    env:
-      RPC_ENDPOINT: ${{ secrets.RPC_ENDPOINT }}
   api:
     cmd: [ "sqd", "serve:prod" ]
